@@ -189,6 +189,7 @@ const App = () => {
             </Body>
             
           </Header>
+          <ScrollView>
           <Content padder>
            
               <View style={{ flex:1, justifyContent:"center", alignItems:"center"}}>
@@ -234,12 +235,17 @@ const App = () => {
                 
                 />
               
-                <Button style={styles.btnBottom} full>
-                  <Text style={styles.btnTextBottom}> Tambah Akun Finansialmu </Text>
-                </Button>
+                
               
           </Content>
-         
+          </ScrollView>
+          <Footer>
+            <FooterTab >
+              <Button style={styles.btnBottom} full>
+                <Text style={styles.btnTextBottom}> Tambah Akun Finansialmu </Text>
+              </Button>
+            </FooterTab>
+          </Footer>
           
               
            
@@ -257,7 +263,7 @@ const styles = StyleSheet.create({
       backgroundColor:"white"
     },
     btnBottom:{
-      marginTop:20,
+     
       backgroundColor:"#0C6DC7",
       paddingLeft:20,
       paddingRight:20,
