@@ -41,7 +41,7 @@ const dataArray = [
       <List>
         <ListItem avatar>
           <Left>
-            <Thumbnail  />
+            <Image source={ require("./assets/images/icon10.jpeg")} />
           </Left>
           <Body style={{flexDirection:"row"}}>
             <Text style={{ flexShrink:1 }}>Finku Terdaftar di bawah <B>KOMINFO</B> yang 
@@ -50,7 +50,7 @@ const dataArray = [
         </ListItem>
         <ListItem avatar>
           <Left>
-            <Thumbnail  />
+          <Image source={ require("./assets/images/icon9.jpeg")} />
           </Left>
           <Body style={{flexDirection:"row"}}>
             <Text style={{ flexShrink:1 }}> Finku <B>secara resmi terdaftar</B> sebagai PT</Text>
@@ -59,7 +59,7 @@ const dataArray = [
         </ListItem>
         <ListItem avatar>
           <Left>
-            <Thumbnail  />
+            <Image source={ require("./assets/images/icon1.jpeg")} />
           </Left>
           <Body style={{flexDirection:"row"}}>
             <Text style={{ flexShrink:1 }}> Finku dikembangkan oleh tim dari Indonesia yang sudah mempelajari
@@ -77,7 +77,7 @@ const dataArray = [
     content: <View>
       <ListItem avatar>
           <Left>
-            <Thumbnail  />
+            <Image source={ require("./assets/images/icon2.jpeg")} />
           </Left>
           <Body style={{flexDirection:"row"}}>
             <Text style={{ flexShrink:1 }}>Finku memanfaatkan enkripsi canggih 256-AES, sama atau lebih tinggi dari <B>rata - rata bank dan asplikasi Fintech di dunia</B></Text>
@@ -85,7 +85,7 @@ const dataArray = [
         </ListItem>
         <ListItem avatar>
           <Left>
-            <Thumbnail  />
+            <Image source={ require("./assets/images/icon3.jpeg")} />
           </Left>
           <Body style={{flexDirection:"row"}}>
             <Text style={{ flexShrink:1 }}> Finku hanya memiliki akses baca (<B> tidak bisa mengubah dan membuat aktivitas</B>), dan hanya membaca data saldo & transaksimu </Text>
@@ -94,7 +94,7 @@ const dataArray = [
         </ListItem>
         <ListItem avatar>
           <Left>
-            <Thumbnail  />
+            <Image source={ require("./assets/images/icon4.jpeg")} />
           </Left>
           <Body style={{flexDirection:"row"}}>
             <Text style={{ flexShrink:1 }}> Finku Memfasilitasi apabila kamu ingin menghapus akunmu, dan <B>datamu akan dihapus secara menyeluruh </B>
@@ -110,7 +110,7 @@ const dataArray = [
     content: <View>
     <ListItem avatar>
         <Left>
-          <Thumbnail  />
+          <Image source={ require("./assets/images/icon2.jpeg")} />
         </Left>
         <Body style={{flexDirection:"row"}}>
           <Text style={{ flexShrink:1 }}>Finku tidak pernah dan <B> tidak akan pernah menjual data </B> apapun </Text>
@@ -118,7 +118,7 @@ const dataArray = [
       </ListItem>
       <ListItem avatar>
         <Left>
-          <Thumbnail  />
+          <Image source={ require("./assets/images/icon6.jpeg")} />
         </Left>
         <Body style={{flexDirection:"row"}}>
           <Text style={{ flexShrink:1 }}> Finku memantau bagaimana kamu berinteraksi dengan App Finku ( contoh: fitur mana yang kamu pakai dan tidak ) untuk
@@ -129,7 +129,7 @@ const dataArray = [
       </ListItem>
       <ListItem avatar>
         <Left>
-          <Thumbnail  />
+          <Image source={ require("./assets/images/icon2.jpeg")} />
         </Left>
         <Body style={{flexDirection:"row"}}>
           <Text style={{ flexShrink:1 }}> Finku tidak pernah dan <B>tidak akan pernah memberikan datamu </B>ke perusahaan manapun tanpa izin kamu
@@ -139,7 +139,7 @@ const dataArray = [
       </ListItem>
       <ListItem avatar>
         <Left>
-          <Thumbnail  />
+          <Image source={ require("./assets/images/icon8.jpeg")} />
         </Left>
         <Body style={{flexDirection:"row"}}>
           <Text style={{ flexShrink:1 }}> Selengkapnya tentang ketentuan dan privasi
@@ -198,13 +198,13 @@ const App = () => {
                 />
               </View>
 
-              <View style={{ flex:1, justifyContent:"center", alignItems:"center"}}>
+              <View style={{ marginTop:20, marginBottom:20, marginLeft:"5%",width:"90%", flex:1, justifyContent:"center", alignItems:"center"}}>
                 <Text style={styles.textInfo}> Sebelum hubungkan akun finansialmu, baca dan pastikan </Text>
               </View>
 
                 <Accordion 
                   key={0} 
-                  style={{ marginTop:10, borderRadius:12 }}
+                  style={{ borderRadius:12 }}
                   dataArray={dataArray[0]}
                   expanded={[0]}
                   headerStyle={{ backgroundColor: "#FFDBAC", color:"black"}}
